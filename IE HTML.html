@@ -6,70 +6,84 @@
 <!-- ================================================== a heading here ================================================ -->
 <h1>
 	<u><b>Internet Engineering</b></u><br>
-	<u><b>HTML</b></u>
-</h1>
+	
+</h1><br>
 <h2><b>TAGS USED:<br></h2>
 LSS = LONG STORY SHORT<br>
 OOL = OUT OF LESSON<br>
+PSD = PREVIOUS SESSION DISCUSSION<br>
 BYD = BY DEFAULT<br>
 DFW = DIFFERENCE WITH<br>
+ATST = AT THE SAME TIME<br>
 MQUESTION = MY QUESTION<br>
 OQUESTION = OTHER'S QUESTION<br>
-E.G. = FOR EXAMPLE</b><br>
-<br>
+E.G. = FOR EXAMPLE<br>
+OPT = OPTIONAL</b><br><br>
+<h1><u><b>7th Session : <br>HTML</b></u></h1>
+
+<h2>
+	<b>INTRODUCTION</b>
+</h2>
 <p>
-	one of the most important resources --&gt from the concept of documents and papers published until now to share.<br/>
+	<b>PSD: </b>HTTP was the process of how to get a resource.<br>
+	HTML is one of the most important resources --&gt from the concept of documents and papers published until now to share.<br/>
+	the beginning of the story was the idea for sharing documents (WWW).<br>
 </p>
 <b>Ouestion:</b><br/>
-HOW TO DEFINE STRUCTURES OF DOCUMENTS?
+HOW TO DEFINE STRUCTURES OF DOCUMENTS?<br>
+a document includes different parts (e.g. tables, figures and images, links and etc.)
 <!-- ================================================== a heading here ================================================ -->
 <h3>
 	<b>BINARY FORMATS : USELESS</b>
 </h3>
-old days: there was nothing
-graphical popular binary formats: PDF, Doc, ...
-little-endian and big-endian issue.
+not readable formats.<br>
+old days: there was nothing<br>
+there was hardly ever graphical popular binary formats: PDF, Doc, ...<br>
+different architectures little-endian and big-endian issue. makes the reading from binary formats much harder.
 
 <!-- ================================================== a heading here ================================================ -->
 <h3>
 	<b>TEXT format</b>
 </h3>
 ASCII text<br>
-open and edit and readable and available in every machine.<br><br>
+open and edit and readable and available in every machine. also no little-endian and big-endian issue.<br><br>
 
 <b>Question:<br/></b>
 how to format the doc though?
-(header, footer, paragraph, table, ... ) (e.g. LaTeX, Word, ...)<br>
+(header, footer, paragraph, table, etc.) (e.g. LaTeX, Word, etc.)<br>
 <b>Solution:<br/></b>
 MARK UPS!
 
 <!-- ================================================== a heading here ================================================ -->
-<h2>
-	<b>INTRO</b>
-</h2>
+
 <b>Hyper Text Markup Language.</b><br>
-Tags specifies the structure.<br>
-defined with SGML <br>
-not a programming language (no calculation can be done with it, it is a description language.)<br><br>
-
-HTML 3.2 W3C 1996<br>
-HTML 4.0 <br>
-XHTML(adding more structures to the html files to limit the formats and templates.)<br>
-HTML<br><br>
-
-<b>element : </b> a pair of tags(open-close) + content between <br> e.g. &lth1&gtThis is header&lt/h1&gt<br>
-<br>
+<b>The main purpose and goal :</b> defines the structure. we do it with tags. (predefined markups)<br>
+HTML defined with SGML <br>
+not a programming language (no calculation can be done with it, it is a description language.)<br>
+CSS is used for presentation specification, HTML is only responsible for the structure (not the font, color, style, etc.)<br><br>
+<h3><b>Standardizing HTML</b></h3>
+<b>HTML 1</b> <b>(OOL: </b>(Berners-Lee, 1989), basic, limited)<br>
+<b>HTML 2.0</b> <b>(OOL: </b>(IETF, 1994): tried standardizing and adding some features)<br>
+<b>HTML 3.2</b> (W3C 1996) tried: unifying to a single standard<br>
+<b>HTML 4.0</b> (W3C 1997) tried: map of future.<br>
+<b>XHTML 1.0</b> (W3C 2000)(adding more structures to the html files to limit the formats and templates.) modified to confirm <b>XML</b> standards.<br>
+<b>HTML 5</b> added many more features which was combined with javascript.<br><br>
 <!-- ================================================== a heading here ================================================ -->
 <h2>
 	<b>Tags:</b>
 </h2>
+<b>XHTML = HTML in this lecture, which is a set of elements.</b><br>
+<b>element : </b> a pair of tags(open/close) + content in between (content is <b>OPT</b>)<br> e.g. &lth1&gtThis is header&lt/h1&gt<br>
+<br>
 &lttagname&gt : open
 &lt/tagname&gt : close
 &lttagname/&gt : self-closing tag (usuallly for tags that have no content)
 <!-- ================================================== a heading here ================================================ -->
 <h3>
-	<b>CORE ATTRIBUTES</b>
+	<b>ATTRIBUTES</b>
 </h3>
+<b>format : </b><br>
+attname = "value in double quote"<br>
 <b>id: </b> an identifying thing for the element, have different other uses too.<br>
 <b>class: </b> assign a class to the element <br>
 (uniqeness of the id might come with issues later because of browsers mechanisms (in case the id is not unique for example.))<br>
@@ -95,8 +109,8 @@ tags won't be rendered. <br><br>
 	<b>HTML RENDERING</b>
 </h2>
 browsers top-bottom, left to right reading to render.<br>
-<b>ignored by browsers:</b>
-&lt!-- ... --&gt  which is comment (like // and /**/ in C)
+<b>ignored by browsers:</b><br>
+&lt!-- which is comment (like // and /**/ in C) --&gt<br>
 &ltnot recognizable tags&gt<br>
 &ltmore than single whitespaces&gt<br>
 br tag is more useful for poems rather than seperating paragraphs. other purposes such as the latter is done by css rather than html.<br>
