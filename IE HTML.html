@@ -1,0 +1,184 @@
+<html>
+<head>
+	<title>IE HTML NOTES</title>
+</head>
+<body>
+<!-- ================================================== a heading here ================================================ -->
+<h1>
+	<u><b>Internet Engineering</b></u><br>
+	<u><b>HTML</b></u>
+</h1>
+<h2><b>TAGS USED:<br></h2>
+LSS = LONG STORY SHORT<br>
+OOL = OUT OF LESSON<br>
+BYD = BY DEFAULT<br>
+DFW = DIFFERENCE WITH<br>
+MQUESTION = MY QUESTION<br>
+OQUESTION = OTHER'S QUESTION<br>
+E.G. = FOR EXAMPLE</b><br>
+<br>
+<p>
+	one of the most important resources --&gt from the concept of documents and papers published until now to share.<br/>
+</p>
+<b>Ouestion:</b><br/>
+HOW TO DEFINE STRUCTURES OF DOCUMENTS?
+<!-- ================================================== a heading here ================================================ -->
+<h3>
+	<b>BINARY FORMATS : USELESS</b>
+</h3>
+old days: there was nothing
+graphical popular binary formats: PDF, Doc, ...
+little-endian and big-endian issue.
+
+<!-- ================================================== a heading here ================================================ -->
+<h3>
+	<b>TEXT format</b>
+</h3>
+ASCII text<br>
+open and edit and readable and available in every machine.<br><br>
+
+<b>Question:<br/></b>
+how to format the doc though?
+(header, footer, paragraph, table, ... ) (e.g. LaTeX, Word, ...)<br>
+<b>Solution:<br/></b>
+MARK UPS!
+
+<!-- ================================================== a heading here ================================================ -->
+<h2>
+	<b>INTRO</b>
+</h2>
+<b>Hyper Text Markup Language.</b><br>
+Tags specifies the structure.<br>
+defined with SGML <br>
+not a programming language (no calculation can be done with it, it is a description language.)<br><br>
+
+HTML 3.2 W3C 1996<br>
+HTML 4.0 <br>
+XHTML(adding more structures to the html files to limit the formats and templates.)<br>
+HTML<br><br>
+
+<b>element : </b> a pair of tags(open-close) + content between <br> e.g. &lth1&gtThis is header&lt/h1&gt<br>
+<br>
+<!-- ================================================== a heading here ================================================ -->
+<h2>
+	<b>Tags:</b>
+</h2>
+&lttagname&gt : open
+&lt/tagname&gt : close
+&lttagname/&gt : self-closing tag (usuallly for tags that have no content)
+<!-- ================================================== a heading here ================================================ -->
+<h3>
+	<b>CORE ATTRIBUTES</b>
+</h3>
+<b>id: </b> an identifying thing for the element, have different other uses too.<br>
+<b>class: </b> assign a class to the element <br>
+(uniqeness of the id might come with issues later because of browsers mechanisms (in case the id is not unique for example.))<br>
+<b>title: </b> <br>
+<!-- ================================================== a heading here ================================================ -->
+<h3>
+	<b>general structure of tags</b>
+</h3>
+&lttag attribute = "attribute value"&gtcontent&lt/tag&gt <br>
+<br>
+different goal of html --> search engines, browsers rendering, pdf, etc.<br>
+<br>
+tags won't be rendered. <br><br>
+&ltem&gtitalic, this tag is for emphasis&lt/em&gt <br>
+<b>RESULT</b>= <em>italic, this tag is for emphasis</em><br>
+<br>
+&lth1&gtthe tag and the purpose of the tag won't be rendered.&lt/h1&gt<br>
+<b>RESULT</b>= is below! <h1>the tag and the purpose of the tag won't be rendered.</h1> <br>
+&ltbr/&gtno content but renders<br>
+<br>
+<!-- ================================================== a heading here ================================================ -->
+<h2>
+	<b>HTML RENDERING</b>
+</h2>
+browsers top-bottom, left to right reading to render.<br>
+<b>ignored by browsers:</b>
+&lt!-- ... --&gt  which is comment (like // and /**/ in C)
+&ltnot recognizable tags&gt<br>
+&ltmore than single whitespaces&gt<br>
+br tag is more useful for poems rather than seperating paragraphs. other purposes such as the latter is done by css rather than html.<br>
+<br>
+&lthtml&gt<br>
+&lthead&gt<br>
+not shown to the user<br>
+&lttitle&gt shown in the window or tab (used by search engines and browsers)&lt/title&gt<br>
+&lt/head&gt<br>
+&ltbody&gt<br>
+shown to the user<br>
+&ltp&gt Hello World! &lt/p&gt<br>
+&lt/body&gt<br>
+&lt/html&gt<br>
+html tag has only two children : head and body<br>
+a tree relation between the tags which is really IMP<br>
+root -&gt head&body --&gt (sth CHILD FOR HEAD)&(sth CHILD FOR BODY) etc.<br>
+<br>
+<!-- ================================================== a heading here ================================================ -->
+<h2>
+	<b>SPECIAL CHARACTERS</b><br>
+</h2>
+<!-- table to be added here. -->
+&lt ::: &amplt; ::: ASCII : &amp#60;<br>
+&gt ::: &ampgt; ::: ASCII : &amp#62;<br>
+&amp ::: &ampamp; ::: ASCII : &amp#38;<br>
+' ' ::: &ampnbsp; ::: ASCII : &amp#160;<br>
+© ::: &ampnbsp; ::: ASCII : &amp#160;<br>
+<br>
+but nowadays!!! --&gt utf-8 characters are allowed.<br>
+but use these encoders for harder accessible characters e.g.<br>
+<br>
+TBRL<br>
+<br>
+<!-- ================================================== a heading here ================================================ -->
+XHTML<br>
+Standard General Markup Language. (SGML)<br>
+XHTML application of Extensible Markup Language. (XML)<br>
+<br>
+XML is more restricted than SGML<br>
+xhtml more restricted than SGML<br>
+xhtml more well-defined.<br>
+<br>
+<!-- ================================================== a heading here ================================================ -->
+<h2><b>XHTML RULES (MORE RESTRICTIONS):</b></h2><br>
+&ltbr/&gt (forced self-closing)(endings are mandatory so there should be no open tag without content or end tag)<br>
+<br>
+TBRL<br>
+<br>
+&ltbig&gt<br>
+&ltcenter&gt<br>
+<br>
+these are implemented by css so it is not needed anymore.<br>
+<br>
+&lt!doctype html&gt<br>
+<br>
+<br>
+&ltmeta&gt&lt/meta&gt<br>
+&ltbody&gt&lt/body&gt<br>
+<br>
+<br>
+&ltsection&gt<br>
+&ltfooter&gt (semantical element)<br>
+&ltheader&gt (semantical element)<br>
+&ltnav&gt (semantical element)<br>
+&ltpre&gt<br>
+<br>
+lists:<br>
+&ltol&gt ordered lists<br>
+&ltul&gt unordered lists (bullet render <b>BYD</b>)<br>
+&ltli&gt the elements of the list. (list item)<br>
+&ltdt&gt<br>
+&ltdd&gt<br>
+&ltdiv&gt (content division, <b>DFW</b> section)<br>
+<br>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
