@@ -5,7 +5,12 @@
 <body>
 <!-- ================================================== a heading here ================================================ -->
 <h1>
-	<u><b>Internet Engineering</b></u><br>
+	<u><b>
+		Internet Engineering<br>
+		Shahid Beheshti University, Computer Science and Engineering Faculty<br>
+		Instructed By: Parham Alvani<br>
+		Author: Arya Parvizi<br>
+	</b></u>
 	
 </h1><br>
 <h2><b>TAGS USED:<br></h2>
@@ -18,7 +23,12 @@ ATST = AT THE SAME TIME<br>
 MQUESTION = MY QUESTION<br>
 OQUESTION = OTHER'S QUESTION<br>
 E.G. = FOR EXAMPLE<br>
-OPT = OPTIONAL</b><br><br>
+OPT = OPTIONAL<br>
+AMAP = AS MUCH AS POSSIBLE<br>
+IMP = IMPORTANT<br>
+TBRL = TO BE REVIEWED LATER
+</b><br><br>
+
 <h1><u><b>7th Session : <br>HTML</b></u></h1>
 
 <h2>
@@ -55,13 +65,15 @@ how to format the doc though?
 MARK UPS!
 
 <!-- ================================================== a heading here ================================================ -->
-
 <b>Hyper Text Markup Language.</b><br>
 <b>The main purpose and goal :</b> defines the structure. we do it with tags. (predefined markups)<br>
 HTML defined with SGML <br>
 not a programming language (no calculation can be done with it, it is a description language.)<br>
 CSS is used for presentation specification, HTML is only responsible for the structure (not the font, color, style, etc.)<br><br>
-<h3><b>Standardizing HTML</b></h3>
+<!-- ================================================== a heading here ================================================ -->
+<h3>
+	<b>Standardizing HTML</b>
+</h3>
 <b>HTML 1</b> <b>(OOL: </b>(Berners-Lee, 1989), basic, limited)<br>
 <b>HTML 2.0</b> <b>(OOL: </b>(IETF, 1994): tried standardizing and adding some features)<br>
 <b>HTML 3.2</b> (W3C 1996) tried: unifying to a single standard<br>
@@ -84,22 +96,49 @@ CSS is used for presentation specification, HTML is only responsible for the str
 </h3>
 <b>format : </b><br>
 attname = "value in double quote"<br>
-<b>id: </b> an identifying thing for the element, have different other uses too.<br>
-<b>class: </b> assign a class to the element <br>
+<b>example : </b><br>
+&lttagname attrib1="setting" attrib2="setting" ...&gt<br>
+...<br>
+&lt/tagname&gt<br><br>
+no att for closing tags.<br>
+some <b>core attribs</b> that most tags have:<br>
+<b>id: </b> a unique identifying thing starting with character, for the element, have different other uses too.<br>
+browsers want to show the content <b>AMAP</b>, they're responsible for rendering html too. so they ignore html's issues <b>AMAP</b>. to give user the best exp. because the user isn't an omniscient to know if the html file of the server has problems.<br>
+<b>class: </b> assign a/some class(es) to the element <br>
 (uniqeness of the id might come with issues later because of browsers mechanisms (in case the id is not unique for example.))<br>
-<b>title: </b> <br>
+<b title="for example this thing you're seeing is a title. :)">title: </b> give more info about the element, hover on <b title="for example this thing you're seeing is a title. :)">"title" </b> to see what I mean.<br>
 <!-- ================================================== a heading here ================================================ -->
 <h3>
 	<b>general structure of tags</b>
 </h3>
 &lttag attribute = "attribute value"&gtcontent&lt/tag&gt <br>
+<b>example : </b><br>
+&lth1 class="primary"&gtExample Heading&lt/h1&gt<br>
+<!-- ================================================== a heading here ================================================ -->
+<h3>
+	<b>HTML PROCESSING</b>
+</h3>
+main discussion.<br>
+different goal of html (not limited to browser rendering) --> 
+<b>
+	search engines, browsers rendering, pdf, etc.<br>
+</b>
 <br>
-different goal of html --> search engines, browsers rendering, pdf, etc.<br>
+<b>search engines : </b> doesn't use your html to render, they just get information and analyze the structure and prioritize and rank the websites (<b>E.G.</b> using "fish farm" phrase in your title has more priorty than a website that just mentioned a "fish farm" in a relevant topic).<br>
+<b>browsers : </b> just render.<br>
+not all tags are rendered. (<b>E.G.</b> &lthead&gt) <br>
+some tags are for render but themselves aren't rendered, <b>E.G.</b> &lth1&gt is not rendered itself, the browser just renders the content<br>
+note : each tag has a default render presentation (<b>E.G.</b> headings have bold and bigger fonts.)<br>
 <br>
-tags won't be rendered. <br><br>
-&ltem&gtitalic, this tag is for emphasis&lt/em&gt <br>
-<b>RESULT</b>= <em>italic, this tag is for emphasis</em><br>
-<br>
+<!-- ================================================== a heading here ================================================ -->
+<h4>
+	<b>tags</b>
+</h4>
+<b>LSS:</b> some tags have content but are not rendered, <b>E.G.</b> &lthead&gt<br><br>
+some have contents and are also rendered <br>
+<b>E.G.</b> &ltem&gtitalic, this tag is for emphasis&lt/em&gt <br>
+<b>RESULT</b>= <em>italic, this tag is for emphasis</em><br><br>
+some tags don't have content but are rendered. <b>E.G.</b> &ltbr/&gt<br>
 &lth1&gtthe tag and the purpose of the tag won't be rendered.&lt/h1&gt<br>
 <b>RESULT</b>= is below! <h1>the tag and the purpose of the tag won't be rendered.</h1> <br>
 &ltbr/&gtno content but renders<br>
@@ -108,16 +147,27 @@ tags won't be rendered. <br><br>
 <h2>
 	<b>HTML RENDERING</b>
 </h2>
-browsers top-bottom, left to right reading to render.<br>
-<b>ignored by browsers:</b><br>
+browsers top-bottom, left to right reading to render.<br><br>
+<b>in-line</b> and <b>block-level</b> elements <br>
+<b>block-level: </b>take one line for each element.(<b>E.G.</b> heading tag)<br>
+<b>in-line: </b>don't take the whole line they are put together in a single line.(<b>E.G.</b> bold tag)<br>
+<!-- ================================================== a heading here ================================================ -->
+<h3>
+	<b>ignored by browsers:</b><br>
+</h3>
 &lt!-- which is comment (like // and /**/ in C) --&gt<br>
 &ltnot recognizable tags&gt<br>
-&ltmore than single whitespaces&gt<br>
-br tag is more useful for poems rather than seperating paragraphs. other purposes such as the latter is done by css rather than html.<br>
+&ltmore than single whitespaces&gt (spaces + newlines + tabs = single space)<br>
+br tag is more useful for poems rather than seperating paragraphs. other purposes such as the latter is done by css rather than html. if you want to fit a paragraph css itself will break as much as it needs, so be aware of what you're doing.<br>
 <br>
+<!-- ================================================== a heading here ================================================ -->
+<h3>
+	<b>
+		hello world Example:
+	</b>
+</h3>
 &lthtml&gt<br>
-&lthead&gt<br>
-not shown to the user<br>
+ &lthead&gt<br>
 &lttitle&gt shown in the window or tab (used by search engines and browsers)&lt/title&gt<br>
 &lt/head&gt<br>
 &ltbody&gt<br>
@@ -125,23 +175,55 @@ shown to the user<br>
 &ltp&gt Hello World! &lt/p&gt<br>
 &lt/body&gt<br>
 &lt/html&gt<br>
-html tag has only two children : head and body<br>
-a tree relation between the tags which is really IMP<br>
+<!-- ================================================== a heading here ================================================ -->
+<h3>
+	<b>
+		description for example above
+	</b>
+</h3>
+<h4>
+	html tag
+</h4>
+every content in html file is between these two tags.(open-close html tag)<br>
+has only two children (Nothing More) : head and body<br>
+<h4>
+	head tag
+</h4>
+not shown to the user.<br>
+<h4>
+	body tag
+</h4>
+shown to the user.<br>
+<!-- ================================================== a heading here ================================================ -->
+<h3>
+	NESTED TAGS
+</h3>
+a tree relation between the tags which is really <b>IMP</b><br>
 root -&gt head&body --&gt (sth CHILD FOR HEAD)&(sth CHILD FOR BODY) etc.<br>
 <br>
 <!-- ================================================== a heading here ================================================ -->
 <h2>
 	<b>SPECIAL CHARACTERS</b><br>
 </h2>
+special characters as a symbol encoded in html can be used.<br>
+parsing issues characters.<br>
+although today these can be rendered normally, it is best to still the codes rather than the character itself, like below:<br>
 <!-- table to be added here. -->
-&lt ::: &amplt; ::: ASCII : &amp#60;<br>
-&gt ::: &ampgt; ::: ASCII : &amp#62;<br>
-&amp ::: &ampamp; ::: ASCII : &amp#38;<br>
-' ' ::: &ampnbsp; ::: ASCII : &amp#160;<br>
-© ::: &ampnbsp; ::: ASCII : &amp#160;<br>
-<br>
+<b>&lt;</b> ::: &amp;lt; ::: ASCII : &amp#60;<br>
+<b>&gt;</b> ::: &amp;gt; ::: ASCII : &amp#62;<br>
+<b>&amp;</b> ::: &amp;amp; ::: ASCII : &amp#38;<br>
+<b>'&nbsp; this was a forced whitespace'</b> ::: &amp;nbsp; ::: ASCII : &amp#160;<br>
+or characters which are not accessible from keyboard (E.G. UTF-8 characters) : <br>
+<b>&copy;</b> ::: &amp;copy; ::: ASCII : &amp#160;<br>
+<b>&lambda;</b> ::: &amp;lambda; ::: ASCII : &amp#955;<br>
 but nowadays!!! --&gt utf-8 characters are allowed.<br>
-but use these encoders for harder accessible characters e.g.<br>
+<h4>
+	other characters by my interest:<br>
+</h4>
+<b>
+&Omega;, &omega;, &Theta;, &theta;, &Alpha;, &alpha;, &Beta;, &beta;, &Gamma;, &gamma;, &Zeta;, &zeta;, &Sigma;, &sigma;, &Phi;, &phi;<br><br>
+こんなすぎるは申し絵分けございませんでした。&#128513;&#128517;😅
+</b><br>
 <br>
 TBRL<br>
 <br>
@@ -186,9 +268,6 @@ lists:<br>
 &ltdd&gt<br>
 &ltdiv&gt (content division, <b>DFW</b> section)<br>
 <br>
-
-
-
 <br>
 <br>
 <br>
