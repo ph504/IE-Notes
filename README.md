@@ -1,11 +1,3 @@
-<!DOCTYPE HTML>
-<!--lang="en"-->
-<html>
-<head>
-	<title>IE HTML NOTES</title>
-</head>
-<body>
-	<meta charset="utf-8">
 <!-- ================================================== a heading here ================================================ -->
 <h1>
 	<u><b>
@@ -398,5 +390,3 @@ lists:<br/>
 <br/>
 <br/>
 <br/>
-</body>
-</html>
