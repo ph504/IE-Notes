@@ -1,2 +1,4 @@
 *.jpg
 *.pdf
+.idea
+*_buffer_*
