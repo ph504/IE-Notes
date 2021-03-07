@@ -176,15 +176,18 @@ browsers top-bottom, left to right reading to render.
 		hello world Example:
 	</b>
 </h3>
-&lt;html&gt;
- &lt;head&gt;
-&lt;title&gt; shown in the window or tab (used by search engines and browsers)&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-shown to the user
-&lt;p&gt; Hello World! &lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+
+```html
+<html>
+	<head>
+		<title> shown in the window or tab (used by search engines and browsers)&lt;/title&gt;
+	</head>
+	<body>
+		shown to the user
+		<p> Hello World! </p>
+	</body>
+</html>
+```
 <!-- ================================================== a heading here ================================================ -->
 <h3>
 	<b>
@@ -192,24 +195,26 @@ shown to the user
 	</b>
 </h3>
 <h4>
-	<b>&lt;html&gt;</b> tag
+	
+__`<html&gt;`__ tag
 </h4>
 every content in html file is between these two tags.(open-close html tag)
 has only two children (Nothing More) : head and body
 <h4>
-	<b>&lt;head&gt;</b> tag
+
+__`<head>`__ tag
 </h4>
 not shown to the user.
 used by search engines.
 page descriptions, page keywords.
 <h4>
-	<b>&lt;body&gt;</b> tag
+	
+__`<body>`__ tag
 </h4>
 shown to the user.
 <!-- ================================================== a heading here ================================================ -->
-<h3>
-	NESTED TAGS
-</h3>
+
+### NESTED TAGS
 a tree relation between the tags which is really <b>IMP</b>
 root -&gt; head&body --&gt; (sth CHILD FOR HEAD)&(sth CHILD FOR BODY) etc.
 
@@ -221,7 +226,7 @@ special characters as a symbol encoded in html can be used.
 parsing issues characters.
 although today these can be rendered normally, it is best to still the codes rather than the character itself, like below:
 <!-- table to be added here. -->
-<b>&lt;</b> ::: &amp;lt; ::: ASCII : &amp#60;
+<b>&lt; ::: &amp;lt; ::: ASCII : &amp#60;
 <b>&gt;</b> ::: &amp;gt; ::: ASCII : &amp#62;
 <b>&amp;</b> ::: &amp;amp; ::: ASCII : &amp#38;
 <b>'&nbsp; this was a forced whitespace'</b> ::: &amp;nbsp; ::: ASCII : &amp#160;
@@ -234,6 +239,7 @@ but nowadays!!! --&gt; utf-8 characters are allowed.
 </h4>
 <b>
 &Omega;, &omega;, &Theta;, &theta;, &Alpha;, &alpha;, &Beta;, &beta;, &Gamma;, &gamma;, &Zeta;, &zeta;, &Sigma;, &sigma;, &Phi;, &phi;
+
 こんなやり過ぎは申し絵分けございませんでした。&#128513;&#128517;😅
 </b>
 
@@ -402,20 +408,23 @@ for error checking purposes of html and announcing the html version and etc. and
 	</li>
 </ol>
 
-### <b>content</b> sectioning 
+
+### __content__ sectioning 
 (logically and contently partition the document.)
 titrs (h1-h6)
 
-#### &lt;section&gt; tag 
+#### `&lt;section&gt;` tag 
 when to use: to seperate parts which don't have semantic load (e.g. seperate slides and gmail tabs. later we can apply different styles to different sections using css.)
 
 example :
 
-&lt;footer&gt;this is a section&lt;/section&gt;
+```html
+<section>this is a section</section>
+```
 
 RESULT = <section>this is a section</section>
 
-#### &lt;footer&gt; and &lt;header&gt; tag 
+#### `&lt;footer&gt;` and `&lt;header&gt;` tag 
 <b>has semantic </b> this footer of the nearest section/content (e.g. copy right)
 
 '&lt;footer&gt;this is a footer example.&lt;/footer&gt;'
@@ -425,16 +434,16 @@ RESULT = <footer>this is a footer example.</footer>
 as you can see there is no default rendering for footer/header in the browser.
 
 
-#### &lt;nav&gt; tag 
+#### `&lt;nav&gt;` tag 
 <strong>has semantic </strong>
 
 for guiding the map of website.
 e.g. home, shop.
 
-#### &lt;p&gt; tag 
+#### `&lt;p&gt;` tag 
 put the content in this tag
 
-#### &lt;pre&gt; tag 
+#### `&lt;pre&gt;` tag 
 <strong>exactly as written</strong> e.g. for codes (e.g. python)
 
 <pre>
